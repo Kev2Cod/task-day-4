@@ -1,0 +1,261 @@
+<html>
+
+<head>
+    <title>Day4 - Form Project</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <!-- Left Navbar -->
+        <div class="nav-left">
+            <img src="assets/img/logo.png" alt="" width=50px">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html" class="active">My Project</a></li>
+            </ul>
+        </div>
+        <!-- End Left Navbar -->
+
+        <!-- Right Navbar -->
+        <div class="nav-right">
+            <a href="contact.html">Contact Me</a>
+        </div>
+        <!-- End Right Navbar -->
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Form Project  -->
+    <div class="form-contact">
+        <h2>ADD MY PROJECT</h2>
+        <form onsubmit="addProject(event)">
+            <div class="form-group">
+                <label for="projectName">Project name</label>
+                <input type="text" id="projectName" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <div class="date">
+                    <div class="star-date">
+                        <label for="starDate">Star Date</label>
+                        <input type="text" id="starDate" class="form-control">
+                    </div>
+
+                    <div class="end-date">
+                        <label for="starDate">End Date</label>
+                        <input type="text" id="endDate" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description"></textarea>
+                </div>
+
+                <!-- Technologies -->
+                <div class="form-group">
+                    <label for="technologies">Technologies</label>
+                    <div class="technologies">
+                        <!-- Techno Left -->
+                        <div class="techno-left">
+                            <div class="nodeJs">
+                                <input type="checkbox" id="nodeJs" value="nodejs" class="checkboxes">
+                                <label for="nodeJs">Node JS</label>
+                            </div>
+                            <div class="reactJs">
+                                <input type="checkbox" id="reactJs" value="reactJs">
+                                <label for="reactJs">React JS</label>
+                            </div>
+                        </div>
+                        <!-- End Techno Left -->
+
+                        <!-- Techno Right -->
+                        <div class="techno-right">
+                            <div class="nextJs">
+                                <input type="checkbox" id="nextJs" value="nextJs">
+                                <label for="nextJs">Next JS</label>
+                            </div>
+                            <div class="typescript">
+                                <input type="checkbox" id="typescript" value="typescript">
+                                <label for="typescript">Typescript</label>
+                            </div>
+                        </div>
+                        <!-- End Techno Right -->
+                    </div>
+                </div>
+                <!-- End Technologies -->
+
+                <!-- Input Image -->
+                <div class="form-group">
+                    <label for="input-image">Upload Image</label>
+                    <div class="div-input-image">
+                        <label for="inputImage">
+                            <p>choose</p>
+                            <i class="fa-solid fa-file-image"></i>
+                        </label>
+                        <input type="file" id="inputImage" hidden>
+                    </div>
+                </div>
+                <!-- End Input Image -->
+
+                <!-- Button Submit -->
+                <div class="div-submit">
+                    <button class="btn-submit">Submit</button>
+                </div>
+                <!-- End Button Sumbit -->
+            </div>
+        </form>
+    </div>
+
+    <!-- Project Section -->
+    <div class="project-section">
+        <h2>MY PROJECT</h2>
+        <div class="project-card-list" id="project-card-list">
+            <!-- Project-Card -->
+            <div class="project-card">
+                <img src="assets/img/astronot.jpg" alt="Project Image">
+                <h4 class="project-name">
+                    <a href="detail-project.html">Application Mobile - 2022</a>
+                </h4>
+                <p class="duration">Durasi : 3 bulan</p>
+
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officiis fugiat
+                    iste sit necessitatibus, dignissimos aut nisi quia adipisci amet. .</p>
+
+                <!-- Icon-Project -->
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js-square"></i>
+                <!-- End Icon-Project -->
+
+                <!-- Button-Project -->
+                <div class="button-project">
+                    <button class="btn-aksi">edit</button>
+                    <button class="btn-aksi">delete</button>
+                </div>
+                <!-- End Button-Project -->
+            </div>
+            <!-- End Project-Card -->
+            <!-- Project-Card -->
+            <div class="project-card">
+                <img src="assets/img/astronot.jpg" alt="Project Image">
+                <h4 class="project-name">
+                    <a href="detail-project.html">Application Mobile - 2022</a>
+                </h4>
+                <p class="duration">Durasi : 3 bulan</p>
+
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officiis fugiat
+                    iste sit necessitatibus, dignissimos aut nisi quia adipisci amet. .</p>
+
+                <!-- Icon-Project -->
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js-square"></i>
+                <!-- End Icon-Project -->
+
+                <!-- Button-Project -->
+                <div class="button-project">
+                    <button class="btn-aksi">edit</button>
+                    <button class="btn-aksi">delete</button>
+                </div>
+                <!-- End Button-Project -->
+            </div>
+            <!-- End Project-Card -->
+
+            <!-- Project-Card -->
+            <div class="project-card">
+                <img src="assets/img/astronot.jpg" alt="Project Image">
+                <h4 class="project-name">
+                    <a href="detail-project.html">Application Mobile - 2022</a>
+                </h4>
+                <p class="duration">Durasi : 3 bulan</p>
+
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officiis fugiat
+                    iste sit necessitatibus, dignissimos aut nisi quia adipisci amet. .</p>
+
+                <!-- Icon-Project -->
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js-square"></i>
+                <!-- End Icon-Project -->
+
+                <!-- Button-Project -->
+                <div class="button-project">
+                    <button class="btn-aksi">edit</button>
+                    <button class="btn-aksi">delete</button>
+                </div>
+                <!-- End Button-Project -->
+            </div>
+            <!-- End Project-Card -->
+
+            <!-- Project-Card -->
+            <div class="project-card">
+                <img src="assets/img/astronot.jpg" alt="Project Image">
+                <h4 class="project-name">
+                    <a href="detail-project.html">Application Mobile - 2022</a>
+                </h4>
+                <p class="duration">Durasi : 3 bulan</p>
+
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officiis fugiat
+                    iste sit necessitatibus, dignissimos aut nisi quia adipisci amet. .</p>
+
+                <!-- Icon-Project -->
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js-square"></i>
+                <!-- End Icon-Project -->
+
+                <!-- Button-Project -->
+                <div class="button-project">
+                    <button class="btn-aksi">edit</button>
+                    <button class="btn-aksi">delete</button>
+                </div>
+                <!-- End Button-Project -->
+            </div>
+            <!-- End Project-Card -->
+
+            <!-- Project-Card -->
+            <div class="project-card">
+                <img src="assets/img/astronot.jpg" alt="Project Image">
+                <h4 class="project-name">
+                    <a href="detail-project.html">Application Mobile - 2022</a>
+                </h4>
+                <p class="duration">Durasi : 3 bulan</p>
+
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officiis fugiat
+                    iste sit necessitatibus, dignissimos aut nisi quia adipisci amet. .</p>
+
+                <!-- Icon-Project -->
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js-square"></i>
+                <!-- End Icon-Project -->
+
+                <!-- Button-Project -->
+                <div class="button-project">
+                    <button class="btn-aksi">edit</button>
+                    <button class="btn-aksi">delete</button>
+                </div>
+                <!-- End Button-Project -->
+            </div>
+            <!-- End Project-Card -->
+
+
+        </div>
+
+    </div>
+
+    <!-- End Project-Session -->
+
+
+    <!-- Script Javascript -->
+    <script src="assets/js/formProject.js"></script>
+    <!-- End Script-Javascript -->
+</body>
+
+</html>

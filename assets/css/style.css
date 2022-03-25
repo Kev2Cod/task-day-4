@@ -1,0 +1,423 @@
+/* Global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+
+    background-color: rgb(224, 224, 224);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* End Global */
+
+
+/* Navbar */
+nav {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 8vh;
+}
+
+/* Left Navbar */
+.nav-left {
+    display: flex;
+    padding-left: 100px;
+    flex: 50%;
+    align-items: center;
+}
+
+nav .nav-left li {
+    display: inline;
+}
+
+nav .nav-left ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 12px;
+}
+
+nav .nav-left .active {
+    font-weight: bold;
+}
+
+/* End Left Navbar */
+
+/* Right Navbar */
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 50%;
+    padding-right: 100px;
+}
+
+nav .nav-right a {
+    background-color: black;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* End Right Navbar */
+/* End Navbar */
+
+/* Main Section */
+section {
+    display: flex;
+    margin: 50px 150px;
+    height: 400px;
+    background-color: rgb(252, 252, 252);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(65, 65, 65, 0.699);
+}
+
+/* Section Left */
+section .section-left {
+    flex: 2;
+}
+
+section .section-left p {
+    text-align: justify;
+    padding-right: 10px;
+}
+
+/* Link Button & Download CV */
+section .section-left .portfolio {
+    margin: 30px 0;
+}
+
+section .section-left .portfolio .button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+section .section-left .portfolio a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+/* End link Button Contact & Download CV */
+
+/* Icon Sosmed */
+section .sosial-media {
+    margin-top: 50px;
+}
+
+section .sosial-media a {
+    margin-right: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+/* End Icon Sosmed */
+/* End Section Left */
+
+/* Section Right */
+section .section-right {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+section .section-right .card-name {
+    background-color: white;
+    width: 250px;
+    box-shadow: 2px 2px 5px rgba(68, 68, 68, 0.671);
+    border-radius: 5px;
+    text-align: center;
+}
+
+section .section-right .card-name img {
+    border-radius: 5px 5px 0px 0px;
+    width: 250px;
+}
+
+section .section-right p {
+    margin-top: -10px;
+    font-size: 1em;
+    padding-bottom: 8px;
+}
+
+/* Form Contact */
+.form-contact {
+    width: 500px;
+    margin: 50px auto;
+}
+
+.form-contact h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Form Control */
+.form-group .form-control {
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    margin-top: 3px;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(122, 122, 122, 0.747);
+}
+
+/* Text Area */
+.form-group textarea {
+    width: 100%;
+    height: 120px;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 2px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(122, 122, 122, 0.747);
+    resize: none;
+}
+
+/* Div Submit */
+.div-submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+/* Button Submit */
+.div-submit .btn-submit {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Date class */
+.date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date .star-date {
+    width: 48%;
+}
+
+.date .end-date {
+    width: 48%;
+}
+
+/* Technology class */
+
+.technologies {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.technologies label {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.techno-left {
+    width: 50%;
+}
+
+.techno-right {
+    width: 50%;
+}
+
+.techno-left div,
+.techno-right div {
+    margin: 10px 0;
+}
+
+/* Checkbox */
+.checkboxes {}
+
+/* Input Image */
+.div-input-image {
+    width: 100%;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 2px 2px 8px rgba(122, 122, 122, 0.747);
+}
+
+.div-input-image label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+}
+
+.div-input-image p {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    background-color: rgb(233, 233, 233);
+    color: rgba(121, 121, 121, 0.884);
+    border-radius: 3px;
+}
+
+.div-input-image label i {
+    margin: 10px;
+}
+
+/* End Input Image */
+
+
+/* Project Section */
+.project-section {
+    background-color: #f8f8f8;
+}
+
+.project-section h2 {
+    padding: 50px 50px 30px;
+    text-align: center;
+}
+
+.project-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Flex Warp jika element melebihi width, maka akan diletakan dibawah */
+    justify-content: flex-start;
+    padding: 0 30px;
+}
+
+.project-card {
+    width: 28%;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(90, 90, 90, 0.76);
+
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-card .duration {
+    color: #696969;
+}
+
+.project-card p {
+    text-align: justify;
+}
+
+.project-card i {
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.project-card .button-project {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-aksi {
+    width: 49%;
+    padding: 5px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Detail-Project-Section */
+.detail-project-section {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.detail-project-section h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.div-detail-project {
+    display: flex;
+}
+
+
+/* detail-left */
+.div-detail-project .detail-left {
+    width: 60%;
+    margin-right: 40px;
+}
+
+.div-detail-project .detail-left img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* end detail-left */
+
+/* detail-right */
+.div-detail-project .detail-right {
+    width: 40%;
+}
+.div-detail-project .detail-right i{
+    margin-right: 15px;
+}
+
+.div-detail-project .detail-right h3{
+    margin: 40px 0px 0px 0px;
+}
+
+.div-detail-project .detail-right p{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* detail-technologies */
+
+.div-detail-project .detail-technologies {
+    display: flex;
+}
+
+.detail-technologies .detail-techno-left {
+    margin-right: 20px;
+}
+/* end detail-technologi */
+/* end detail-right */
+
+
+/* detail description */
+
+.detail-description {
+    margin-top: 50px;
+}
+
+/* End Detail-Description */
